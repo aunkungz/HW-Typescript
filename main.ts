@@ -39,7 +39,7 @@ function getcoins() {
 
 function addCoin(coin: Coin): void {
 	const $coins = $('#coins')
-	$coins.append((`<li> ${coin.print()} <\li>`)
+	$coins.append(` <li>${coin.print()}</li> `
 
 	)
 }

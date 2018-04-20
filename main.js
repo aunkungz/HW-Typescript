@@ -16,7 +16,7 @@ function getcoins() {
 }
 function addCoin(coin) {
     var $coins = $('#coins');
-    $coins.append(("<li> " + coin.print() + " <li>"));
+    $coins.append(" <li>" + coin.print() + "</li> ");
 }
 function displayCoins(coins) {
     coins.forEach(function (coin) {
