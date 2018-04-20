@@ -15,7 +15,7 @@ class Coin {
 	}
 
 	print(): string {
-		return ` <a href="https://coinmarketcap.com/currencies/${this.id}/"> ${this.symbol}</a>  ${this.price_thb} บาท `
+		return `<button type="button" class="btn btn-outline-dark"> <a href="https://coinmarketcap.com/currencies/${this.id}/"> ${this.symbol}</a></button>  ${this.price_thb} บาท `
 
 	}
 
@@ -39,7 +39,7 @@ function getcoins() {
 
 function addCoin(coin: Coin): void {
 	const $coins = $('#coins')
-	$coins.append(` <li>${coin.print()}</li> `
+	$coins.append(`  <li>${coin.print()}</li>  `
 
 	)
 }
